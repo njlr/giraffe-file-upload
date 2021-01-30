@@ -1,0 +1,8 @@
+source https://api.nuget.org/v3/index.json
+
+storage: none
+framework: netcoreapp3.1
+
+nuget FSharp.Core
+nuget Giraffe
+nuget Ply
