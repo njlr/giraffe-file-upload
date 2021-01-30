@@ -186,7 +186,7 @@ let main _ =
 
   WebHost.CreateDefaultBuilder()
     .UseKestrel(fun opts ->
-      opts.Limits.MaxRequestBodySize <- TerabyteInBytes
+      opts.Limits.MaxRequestBodySize <- Nullable TerabyteInBytes
       opts.Listen(IPAddress.Loopback, 8080))
     .Configure(configureApp)
     .ConfigureServices(configureServices)
